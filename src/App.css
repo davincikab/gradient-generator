@@ -2,37 +2,96 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --main-color:#9d2b97;
+  --dark-color:#801f7b;
+  --white:#fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding:0.4em 0.8em;
+  box-shadow: 1px 1px 0.2em #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar h5 {
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.navbar div {
+  font-size: 1.8em;
+  color:var(--main-color);
+  font-weight: 700;
+}
+
+.gradient-picker {
+  height: 100px;
+  width: 100%;
+}
+
+.input-section {
+  padding:0.2em 0.4em;
+  margin: 0.4em 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.item {
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+input {
+  border-radius: 4px;
+  border:1px solid #ddd;
+  padding:1em;
+  margin:0 0.3em;
+}
+
+.position {
+  width:20vw;
+}
+
+.close-btn {
+  font-size: 2.2em;
+  color:#ddd;  
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.clipboard {
+  position: relative;
+}
+
+.clip {
+  height: 200px;
+  color:var(--white);
+  border-radius: 0.2em;
+  margin:0 0.5em;
+  background-color: var(--dark-color);
+  text-align: left;
+  padding: 0.2em 0.8em;
+  font-weight: 700;
+}
+
+.btn {
   color: white;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 0.5em 0.6em;
+  border: 0px;
+  font-size: 1.6em;
+  position: absolute;
+  bottom: -14%;
+  right: 2%;
+  box-shadow: 1px 1px 0.2em var(--dark-color)
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
