@@ -1,0 +1,84 @@
+.main {
+    background-color: var(--main-two);
+    height: 100vh;
+    color:var(--white);
+}
+
+.navbar {
+    display: block;
+    text-align: center;
+    box-shadow: none;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0.8em 0;
+}
+
+.section p {
+    position: absolute;
+    letter-spacing: 8px;
+    font-size: 2.1em;
+    z-index: 0;
+}
+
+.morph-section {
+    position: relative;
+    z-index: 1;
+    width: 70vw;
+    height: 25vh;
+    background-color: black;
+    border-radius: 0.5em;
+    opacity: 0.2;
+}
+
+.morph-section .btn:first-child {
+    top:-10%;
+    left:-12%;
+}
+
+.morph-section .btn:last-child {
+    bottom: -10%;
+    right:-12%;
+}
+.btn {
+    padding:0.5em;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-color);
+}
+
+.sliders {
+    margin-top: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin:0.8em 0;
+}
+
+.form-group input {
+    fill:var(--main-color);
+}
+
+@media(min-width:50em) {
+    .main {
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        top:0px;
+    }
+    .section, .sliders {
+        width:30vw;
+    }
+}
